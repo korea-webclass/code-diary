@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.wrap {
+    font-size: 0;
+    /* overflow: hidden; */
+    height: 50px;
+    background: #000;
+}
+
+.box {
+    /* display: inline-block; */
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    /* margin-bottom: 20px; */
+}
+
+.box-01 {
+    background-color: red;
+}
+
+.box-02 {
+    background-color: orange;
+}
+
+.box-03 {
+    background-color: yellow;
+    color: #000;
+}
+
+.box-04 {
+    background-color: green;
+}
+
+.box-05 {
+    background-color: blue;
+}
+
+.box-06 {
+    background-color: blueviolet;
+}
+
+.box-07 {
+    background-color: violet;
+}
+
+.box-08 {
+    background-color: darkblue;
+}
+
+.box-09 {
+    background-color: cyan;
+}
