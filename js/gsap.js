@@ -6,26 +6,87 @@
 
 
 $(function (){
+
+    // function top_bar() {
+    //     var $menu1ItemLine = $('.top-bar__menu-1-item-line');
+    //     $('.top-bar__menu-1 > ul > li').mouseenter(function() {
+    //         var $li = $(this);
+
+    //         var left = $li.position().left;
+    //         var width = $li.outerWidth();
+
+    //         $menu1ItemLine.css({
+    //             left: left,
+    //             width: width
+    //         });
+    //         // console.log("left : " + left + ", width: " + width);
+    //     });
+    //     $('.top-bar__menu-1 > ul > li').eq(0).mouseenter();
+    // };
+    // top_bar();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 스크롤 트리거 플러그인 활성화
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('.box-01', {
+    gsap.from('.section-1 > img', {
+        duration: 1,
         x: 400,
-        rotation: 360,
-        duration: 4,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: '.section-1 > img', 
+            markers: true, 
+            start: "top 50%", 
+            end: 'bottom 20%', 
+            toggleActions: 'play none none reverse', 
+        }
     });
 
-    gsap.to('.box-02', {
-        scrollTrigger: {
-            trigger: '.box-05',
-            markers: true,
-            start: "center 50%",
-            end: 'bottom, 10%',
-            toggleActions: 'play pause reverse none',
-        }, 
-        x: 400,
-        rotation: 360,
-        duration: 4,
+    gsap.from('.section-2 > img', {
+        duration: 1,
+        y: 400,
+        opacity: 0,
+        scrollTrigger: '.section-2 > img',
     });
+
+
+
+
+
+
+    // gsap.registerPlugin(ScrollTrigger);
+
+    // gsap.to('.box-01', {
+    //     x: 400,
+    //     rotation: 360,
+    //     duration: 4,
+    // });
+
+    // gsap.to('.box-02', {
+    //     scrollTrigger: {
+    //         trigger: '.box-05',
+    //         markers: true,
+    //         start: "center 50%",
+    //         end: 'bottom, 10%',
+    //         toggleActions: 'play pause reverse none',
+    //     }, 
+    //     x: 400,
+    //     rotation: 360,
+    //     duration: 4,
+    // });
 
 
 
