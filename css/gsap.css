@@ -2,94 +2,15 @@
 
 body {
     margin: 0;
-    padding: 0;
+    background-color: #111;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.3) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.3) 2px, transparent 2px),
+        linear-gradient(rgba(255, 255, 255, 0.2) 2px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 2px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px 1px;
 }
-
-.con-min-widt {
-    min-width: 1080px;
-}
-
-.con {
-    width: 1080px;
-}
-
-.top-bar {
-    background-color: black;
-    color: white;
-    height: 100px;
-}
-
-.top-bar__menu-1 {
-    position: relative;
-}
-
-.top-bar__menu-1 > ul > li {
-    display: inline-block;
-    height: 100px;
-    line-height: 100px;
-}
-
-.top-bar__menu-1 > ul > li > a {
-    display: block;
-    padding: 0 20px;
-    color: white;
-}
-
-.top-bar__menu-1 > ul > li:hover  > a {
-    background-color: white;
-    color: black;
-}
-
-.top-bar__menu-1-item-line {
-    height: 10px;
-    position: absolute;
-    width: 0;
-    bottom: 0;
-    left: -500px;
-    transition: left 0.3s, width 0.3s;
-    background-color: red;
-}
-
-
-
-
-
-
-
-
-section {
-    height: 3000px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.section-0 {
-    background-color: black;
-}
-.section-1 {
-    background-color: green;
-}
-.section-2 {
-    background-color: gold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .wrap {
     font-size: 0;
@@ -98,49 +19,63 @@ section {
     background: #000;
 }
 
-.box {
-    /* display: inline-block; */
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    text-align: center;
-    color: #fff;
-    /* margin-bottom: 20px; */
+.demo {
+    font-size: 0;
 }
 
-.box-01 {
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 10px solid grey;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* .box {
+    실습01, 실습02 스타일 적용
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 10px solid grey;
+    margin-top: 300px;
+    margin-bottom: 300px;
+} */
+
+.box-1 {
     background-color: red;
 }
 
-.box-02 {
+.box-2 {
     background-color: orange;
 }
 
-.box-03 {
+.box-3 {
     background-color: yellow;
     color: #000;
 }
 
-.box-04 {
+.box-4 {
     background-color: green;
 }
 
-.box-05 {
+.box-5 {
     background-color: blue;
 }
 
-.box-06 {
+.box-6 {
     background-color: blueviolet;
 }
 
-.box-07 {
+.box-7 {
     background-color: violet;
 }
 
-.box-08 {
+.box-8 {
     background-color: darkblue;
 }
 
-.box-09 {
+.box-9 {
     background-color: cyan;
 }
