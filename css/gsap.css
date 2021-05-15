@@ -23,7 +23,7 @@ body {
     font-size: 0;
 }
 
-.box {
+/* .box {
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -31,17 +31,45 @@ body {
     border: 10px solid grey;
     font-size: 50px;
     text-align: center;
-}
+} */
 
-/* .box {
-    실습01, 실습02 스타일 적용
+/* 실습01, 실습02 스타일 적용 */
+.box {
     width: 100px;
     height: 100px;
     box-sizing: border-box;
     border: 10px solid grey;
     margin-top: 300px;
     margin-bottom: 300px;
-} */
+}
+
+/* 숫자 애니메이션 */
+.section-1 {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-text > span {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.section-1-text > span > span {
+    font-size: 5rem;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
 
 .box-1 {
     background-color: red;

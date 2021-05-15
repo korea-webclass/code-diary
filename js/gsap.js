@@ -5,7 +5,83 @@
 */
 
 $(function () {
+    // 6편
+    gsap.registerPlugin(ScrollTrigger);
 
+    gsap.to('.box-2', {
+        scrollTrigger: '.box-3',
+        duration: 1,
+        x: 400,
+        rotation: 360,
+        duration: 4,
+    });
+
+    gsap.to('.box-3', {
+        scrollTrigger: {
+            trigger: '.box-3',
+            markers: true,
+            start: 'center center',
+            end: "bottom, 10%",
+            toggleActions: 'play pause reverse complete'
+        },
+        duration: 1,
+        x: 400,
+        rotation: 360,
+        duration: 4,
+    });
+
+    // .box-3 보이면 .box-2 동작
+    // gsap.to('.box-2', {
+    //     scrollTrigger: '.box-3',
+    //     duration: 1,
+    //     x: 400,
+    //     rotation: 360,
+    //     duration: 4,
+    // });
+
+    // 일반적인 코드  : .box-3 보이면 .box-3 동작
+    // gsap.to('.box-3', {
+    //     scrollTrigger: '.box-3',
+    //     duration: 1,
+    //     x: 400,
+    //     rotation: 360,
+    //     duration: 4,
+    // });
+
+
+
+
+
+
+
+
+
+    // 5편
+    // var tl = gsap.timeline({
+    //     repeat: -1,
+    //     repeatDelay: 5,
+    // });
+    
+    // tl.from('.section-1-text > span > span', {
+    //     y: 300,
+    //     duration: 1,
+    //     stagger: 0.2,
+    // });
+
+    // tl.to('.section-1-text > span > span', {
+    //     y: -300,
+    //     duration: 1,
+    //     stagger: {
+    //         each: 0.2,
+    //         from: 'end',
+    //     }
+    // }, '+=3');
+
+    // gsap.from('.section-1-text > span > span', {
+    //     y: 300,
+    //     duration: 1,
+    //     stagger: 0.2,
+    // });
     
 
 
