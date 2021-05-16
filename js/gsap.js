@@ -5,30 +5,76 @@
 */
 
 $(function () {
-    // 6편
+    // 7편
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('.box-2', {
-        scrollTrigger: '.box-3',
+    // .section01 > img 스크롤 내렸다가, 올렸다가 애니메이션
+    gsap.from('.section01 > img', {
+        x: 600,
         duration: 1,
-        x: 400,
-        rotation: 360,
-        duration: 4,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: '.section01 > img',
+            markers: true,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse none reverse'
+        }
     });
 
-    gsap.to('.box-3', {
-        scrollTrigger: {
-            trigger: '.box-3',
-            markers: true,
-            start: 'center center',
-            end: "bottom, 10%",
-            toggleActions: 'play pause reverse complete'
-        },
+    gsap.from('.section02 > img', {
+        y: 600,
         duration: 1,
-        x: 400,
-        rotation: 360,
-        duration: 4,
+        opacity: 0,
+        scrollTrigger: '.section02 > img'
     });
+
+    // 스크롤하면 한번 나타나는 애니메이션
+    // gsap.from('.section01 > img', {
+    //     x: 600,
+    //     duration: 1,
+    //     opacity: 0,
+    //     scrollTrigger: '.section01 > img'
+    // });
+
+    // gsap.from('.section02 > img', {
+    //     y: 600,
+    //     duration: 1,
+    //     opacity: 0,
+    //     scrollTrigger: '.section02 > img'
+    // });
+
+
+
+
+
+
+
+
+    // 6편
+    // gsap.registerPlugin(ScrollTrigger);
+
+    // gsap.to('.box-2', {
+    //     scrollTrigger: '.box-3',
+    //     duration: 1,
+    //     x: 400,
+    //     rotation: 360,
+    //     duration: 4,
+    // });
+
+    // gsap.to('.box-3', {
+    //     scrollTrigger: {
+    //         trigger: '.box-3',
+    //         markers: true,
+    //         start: 'center center',
+    //         end: "bottom, 10%",
+    //         toggleActions: 'play pause reverse complete'
+    //     },
+    //     duration: 1,
+    //     x: 400,
+    //     rotation: 360,
+    //     duration: 4,
+    // });
 
     // .box-3 보이면 .box-2 동작
     // gsap.to('.box-2', {

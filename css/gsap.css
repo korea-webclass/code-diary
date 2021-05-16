@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body {
+/* body {
     margin: 0;
     background-color: #111;
     background-image: 
@@ -10,7 +10,7 @@ body {
         linear-gradient(90deg, rgba(255, 255, 255, 0.2) 2px, transparent 1px);
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px 1px;
-}
+} */
 
 .wrap {
     font-size: 0;
@@ -44,14 +44,19 @@ body {
 }
 
 /* 숫자 애니메이션 */
-.section-1 {
+.section {
     min-height: 100vh;
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-items: flex-start;
 }
+
+.section00 {background-color: black;}
+.section01 {background-color: gainsboro;}
+.section02 {background-color: gold;}
 
 .section-1-text > span {
     display: inline-block;
@@ -63,7 +68,12 @@ body {
     display: inline-block;
 }
 
-
+/* 스크롤트리거 애니메이션 */
+.section {
+    height: 3000px;
+    display: flex;
+    justify-content: center;
+}
 
 
 
