@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동영상 테스트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #v1 {
+            width: 100%;
+            object-fit: fill;
+        }
+
+        body > h1 {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            font-size: 3rem;
+            color: red;
+            text-align: center;
+            animation: motion 2s both;
+        }
+
+        @keyframes motion {
+            from {
+                margin-top: 0;
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            to {
+                margin-top: 200px;
+                opacity: 1;
+                transform: scale(3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="trans">동영상 테스트</h1>
+    <video autoplay id="v1">
+        <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        이 글자가 보인다면 사용중인 브라우저는 구형입니다.
+    </video>
+</body>
+</html>
