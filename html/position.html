@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>position 이해하기</title>
+    <style>
+        .content {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+        }
+
+        .content-box {
+            position: relative;
+            top: 0;
+            left: 20px;
+            /* width: 200px; */
+            /* height: 200px; */
+            background-color: #00ff00;
+        }
+
+        .content-box > ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* white-space: nowrap; */
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="content">
+        <li class="content-box">
+            <a href="#"></a>
+            <ul>
+                <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt illum laboriosam labore deserunt
+                    natus facere totam nisi repellendus. Voluptates quidem pariatur voluptatibus sunt nihil alias porro
+                    velit, nam inventore vitae.
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
