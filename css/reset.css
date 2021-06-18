@@ -38,6 +38,11 @@ caption {
     border-style: none;
 }
 
+/* button 백그라운드 초기화 */
+button {
+    background: none;
+    cursor: pointer;
+}
 /* a 링크 초기화 */
 a {
     color: #000; 

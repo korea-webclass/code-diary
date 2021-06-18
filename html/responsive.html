@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>반응형 콘텐츠 연습</title>
+    <style>
+        .header {background: #000;}
+        .header .inner {width: 100%; max-width: 1000px; margin: 0 auto;} 
+        .header .content {display: flex; align-items: center; justify-content: space-between; height: 60px;}
+        .header .logo {}
+        .header .logo-link {display: inline-block;}
+        .header .logo-img {width: 120px; display: block;}
+        .header .gnb {width: 100%; margin: 0 20px; padding: 0 20px;}
+        .header .gnb-list {display: flex; justify-content: space-between;}
+        .header .gnb-list > li {}
+        .header .gnb-list > li > a {color: #fff;}
+        .header .user-btn {display: flex; justify-content: space-between;}
+        .header .user-btn > .btn {width: 40px; height: 48px; background-repeat: no-repeat; background-size: 48px auto; background-position: 0 0;}
+        /* .header .user-btn > .btn+.btn {margin-left: 20px;} */
+        .header .user-btn > .btn {margin: 0 20px;}
+        .header .user-btn > .btn01 {background-image: url('../image/btn03_responsi.png')}
+        .header .user-btn > .btn02 {background-image: url('../image/btn03_responsi.png')}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <div class="content">
+                    <h1 class="logo">
+                        <a href="logo-link">
+                            <img src="../image/logo02_responsive.png" class="logo-img" alt="">
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul class="gnb-list">
+                            <li><a href="">테스트</a></li>
+                            <li><a href="">테스트</a></li>
+                            <li><a href="">테스트</a></li>
+                            <li><a href="">테스트</a></li>
+                            <li><a href="">테스트</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user-btn">
+                        <button class="btn btn01"></button>
+                        <button class="btn btn02"></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>    
+</body>
+</html>
