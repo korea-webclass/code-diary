@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>padding-top: %;</title>
+    <style>
+        .wrap {}
+
+        .box {}
+
+        .list {
+            /* width: 1200px; */
+            width: 63%;
+            margin: 0 auto;
+        }
+
+        .list::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .list li {
+            float: left;
+            /* width: 600px; */
+            width: 50%;
+            /* height: 300px; */
+            padding-top: 25%;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .list a {}
+
+        .list div {
+            width: 100%;
+            background: url('../image/bg_visual.png') no-repeat center / cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <ul class="list">
+                <li>
+                    <a href="">
+                        <div></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
