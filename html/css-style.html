@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>css 더하기 | + x</title>
+    <style>
+        .sect01 {
+            position: relative;
+            width: 64px;
+            height: 64px;
+            margin: 0 auto;
+        }
+        
+        .sect01 .line-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+        }
+
+        .sect01 .line-box > span {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+        }
+
+        .sect01 .line-01 {
+            transform: rotate(135deg) translateX(0%);
+        }
+
+        .sect01 .line-02 {
+            transform: rotate(45deg) translateX(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sect01">
+            <div class="line-box">
+                <span class="line-01"></span>
+                <span class="line-02"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
